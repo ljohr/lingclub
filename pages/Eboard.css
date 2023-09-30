@@ -22,3 +22,25 @@
 .grad-year {
   font-style: italic;
 }
+
+/* Tablets and Mobile Devices */
+@media screen and (max-width: 767px) {
+  .skills-group, .projects-group {
+    flex-direction: column;
+  }
+
+  .experience-inner {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .eboard-list {
+    width: 80%;
+  }
+
+  .eboard-member {
+    flex: 0 0 1;
+  }
+}
