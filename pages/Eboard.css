@@ -1,0 +1,24 @@
+.eboard-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 3% 0;
+}
+
+.eboard-list {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.1rem;
+  width: 40%;
+  padding-top: 2%;
+}
+
+.eboard-member {
+  flex: 0 0 50%;
+  padding-bottom: 2rem;
+}
+
+.grad-year {
+  font-style: italic;
+}

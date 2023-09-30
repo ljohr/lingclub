@@ -3,7 +3,13 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from "../components/Navbar"
+import Footer from "../components/Footer"
 import Home from "../pages/Home"
+import About from "../pages/About"
+import Eboard from "../pages/Eboard"
+import Events from "../pages/Events"
+import Resources from "../pages/Resources"
+import Contact from "../pages/Contact"
 import {
   createBrowserRouter,
   RouterProvider,
@@ -18,6 +24,7 @@ const LayOut = () => {
         <Navbar />
       </header>
       <Outlet />
+      <Footer />
     </>
   );
 };
@@ -30,26 +37,26 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />
-      // },
-      // {
-      //   path: "/about",
-      //   element: <About />
-      // },
-      // {
-      //   path: "/eboard",
-      //   element: <Eboard />
-      // },
-      // {
-      //   path: "/events",
-      //   element: <Events />
-      // },
-      // {
-      //   path: "/resources",
-      //   element: <Resources />
-      // },
-      // {
-      //   path: "/contact",
-      //   element: <Contact />
+      },
+      {
+        path: "/about",
+        element: <About />
+      },
+      {
+        path: "/eboard",
+        element: <Eboard />
+      },
+      {
+        path: "/events",
+        element: <Events />
+      },
+      {
+        path: "/resources",
+        element: <Resources />
+      },
+      {
+        path: "/contact",
+        element: <Contact />
       },
     ]
   }
