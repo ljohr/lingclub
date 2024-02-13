@@ -68,7 +68,8 @@
   padding: 5rem 10rem;
 }
 
-.about p {
+.about p,
+.contact p {
   font-size: 1.1rem;
   line-height: 1.6rem;
 }
@@ -104,7 +105,6 @@
 .email {
   padding-bottom: 1rem;
   text-align: center;
-  font-size: 0.95rem;
 }
 
 @media screen and (max-width: 768px) {
