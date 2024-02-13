@@ -1,24 +1,23 @@
-import { useState } from 'react'
-import './App.css'
-import Navbar from "../components/Navbar"
-import Footer from "../components/Footer"
-import Home from "../pages/Home"
-import About from "../pages/About"
-import Eboard from "../pages/Eboard"
-import Events from "../pages/Events"
-import Resources from "../pages/Resources"
-import Contact from "../pages/Contact"
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+// import About from "./pages/About";
+// import Eboard from "./pages/Eboard";
+// import Events from "./pages/Events";
+// import Resources from "./pages/Resources";
+// import Contact from "./pages/Contact";
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
-  Outlet
-} from "react-router-dom"
+  // Route,
+  Outlet,
+} from "react-router-dom";
 
 const LayOut = () => {
   return (
     <>
-      <header> 
+      <header>
         <Navbar />
       </header>
       <Outlet />
@@ -28,44 +27,44 @@ const LayOut = () => {
 };
 
 const router = createBrowserRouter([
-  {  
-    path:"/",
+  {
+    path: "/",
     element: <LayOut />,
-    children:[ 
+    children: [
       {
         path: "/",
-        element: <Home />
+        element: <Home />,
       },
-      {
-        path: "/about",
-        element: <About />
-      },
-      {
-        path: "/eboard",
-        element: <Eboard />
-      },
-      {
-        path: "/events",
-        element: <Events />
-      },
-      {
-        path: "/resources",
-        element: <Resources />
-      },
-      {
-        path: "/contact",
-        element: <Contact />
-      },
-    ]
-  }
+      // {
+      //   path: "/about",
+      //   element: <About />,
+      // },
+      // {
+      //   path: "/eboard",
+      //   element: <Eboard />,
+      // },
+      // {
+      //   path: "/events",
+      //   element: <Events />,
+      // },
+      // {
+      //   path: "/resources",
+      //   element: <Resources />,
+      // },
+      // {
+      //   path: "/contact",
+      //   element: <Contact />,
+      // },
+    ],
+  },
 ]);
 
 const App = () => {
   return (
     <>
-      <RouterProvider router={router}/>
+      <RouterProvider router={router} />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;

@@ -4,24 +4,6 @@
   min-height: 100vh;
 }
 
-.home-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 5% 0;
-}
-
-.home-main button {
-  border: none;
-  border-radius: 1rem;
-  padding: 0.9rem 1.8rem;
-  background-color: rgb(71, 77, 187);
-  color:#fff;
-  font-weight: 600;
-  margin-top: 1rem;
-}
-
 .events-main {
   display: flex;
   flex-direction: column;
@@ -42,18 +24,10 @@
   padding-top: 0.7rem;
 }
 
-.about-main, .resources-main, .contact-main {
+.about-main,
+.resources-main,
+.contact-main {
   display: flex;
   justify-content: center;
   padding: 3% 0;
-}
-
-.footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  margin-top: auto;
-  padding: 1% 5%;
-  font-size: 0.9rem;
 }

@@ -1,0 +1,108 @@
+.homeMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.homeMain .joinBtn {
+  border: none;
+  padding: 0.7rem 1rem;
+  background-color: rgb(241, 241, 241);
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.joinBtn {
+  text-decoration: none;
+}
+
+.imageContainer {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fullScreenImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(37, 37, 40, 0.601);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.textContent {
+  width: 70%;
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  padding-top: 10rem;
+}
+
+.textContent h1 {
+  font-size: 5rem;
+  margin-bottom: 1.2rem;
+}
+
+.about,
+.contact {
+  padding: 5rem 10rem;
+}
+
+.about p {
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+}
+
+.sectionTitle {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.sectionTitle h2 {
+  font-size: 2.3rem;
+}
+
+.highlight {
+  width: 100%;
+  background-color: rgb(246, 246, 246);
+  padding: 5rem 10rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.info img {
+  max-height: 5rem;
+}
+
+.email {
+  padding-bottom: 1rem;
+  text-align: center;
+  font-size: 0.95rem;
+}
