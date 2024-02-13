@@ -63,7 +63,8 @@
 }
 
 .about,
-.contact {
+.contact,
+.highlight {
   padding: 5rem 10rem;
 }
 
@@ -84,7 +85,6 @@
 .highlight {
   width: 100%;
   background-color: rgb(246, 246, 246);
-  padding: 5rem 10rem;
   display: flex;
   justify-content: space-between;
   gap: 1.5rem;
@@ -105,4 +105,42 @@
   padding-bottom: 1rem;
   text-align: center;
   font-size: 0.95rem;
+}
+
+@media screen and (max-width: 768px) {
+  .textContent h1 {
+    font-size: 4rem;
+  }
+  .textContent {
+    width: 90%;
+  }
+  .about,
+  .contact,
+  .highlight {
+    padding: 5rem 5rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .textContent h1 {
+    font-size: 2.3rem;
+    margin-bottom: 1.9rem;
+  }
+  .about,
+  .contact,
+  .highlight {
+    padding: 4rem 2rem;
+  }
+
+  .highlight {
+    flex-direction: column;
+  }
+
+  .info img {
+    max-height: 3.5rem;
+  }
+
+  .joinBtn {
+    padding: 0.5rem 0.8rem;
+  }
 }
