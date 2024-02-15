@@ -3,7 +3,8 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 // import About from "./pages/About";
-// import Eboard from "./pages/Eboard";
+import Eboard from "./pages/Eboard";
+import FormerEboard from "./pages/FormerEboard";
 // import Events from "./pages/Events";
 // import Resources from "./pages/Resources";
 // import Contact from "./pages/Contact";
@@ -39,10 +40,14 @@ const router = createBrowserRouter([
       //   path: "/about",
       //   element: <About />,
       // },
-      // {
-      //   path: "/eboard",
-      //   element: <Eboard />,
-      // },
+      {
+        path: "/team",
+        element: <Eboard />,
+      },
+      {
+        path: "/former-team",
+        element: <FormerEboard />,
+      },
       // {
       //   path: "/events",
       //   element: <Events />,

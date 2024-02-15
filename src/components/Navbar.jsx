@@ -18,6 +18,9 @@ const Navbar = () => {
           <li>
             <HashLink to="/#contact">Contact</HashLink>
           </li>
+          <li>
+            <HashLink to="/team">Team</HashLink>
+          </li>
         </ul>
       </nav>
     </div>
