@@ -3,11 +3,12 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 3rem 0 10rem 0;
+  padding: 3rem 0 3rem 0;
 }
 
-.eboardMain h1 {
+.title {
   margin-bottom: 2.5rem;
+  font-size: 2.6rem;
 }
 
 .eboardList {
@@ -35,9 +36,15 @@
 .position {
   font-size: 0.95rem;
 }
+
 .classYear {
   font-size: 0.95rem;
   font-style: italic;
+}
+
+.pastLink {
+  margin-top: 5%;
+  text-decoration: none;
 }
 
 /* Tablets and Mobile Devices */

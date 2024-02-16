@@ -1,10 +1,11 @@
 import style from "./Eboard.module.css";
+import { HashLink } from "react-router-hash-link";
 import profileIllustration from "../assets/profile-illustration.svg";
 
 const Eboard = () => {
   return (
     <main className={style.eboardMain}>
-      <h1>2023-2024 Executive Board</h1>
+      <h1 className={style.title}>Executive Board</h1>
       <section className={style.eboardList}>
         <div className={style.member}>
           <img
@@ -42,7 +43,7 @@ const Eboard = () => {
             className={style.profileImg}
             alt="profile-image"
           />
-          <h3>Alex Gutidas?</h3>
+          <h3>Alex Gudaitis</h3>
           <p className={style.position}>Treasurer</p>
           <p className={style.classYear}>Class of 2024</p>
         </div>
@@ -67,6 +68,10 @@ const Eboard = () => {
           <p className={style.classYear}>Class of 2026</p>
         </div>
       </section>
+
+      <HashLink className={style.pastLink} to="/former-team">
+        Past Executive Board
+      </HashLink>
     </main>
   );
 };
